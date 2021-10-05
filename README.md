@@ -3,7 +3,7 @@
 
 **NanoPro 1.0** assembly and operation is described in two parts. Part 1 describes assembly and validation of **NanoPro 1.0** and is published here:  
 
-**Danial, JSH, Lam, JYL, Wu, Y, Woolley, M, Cheetham, MR, Emin, D, and Klenerman, D.**
+**Danial, JSH, Lam, JYL, Wu, Y, Woolley, M, Cheetham, MR, Emin, D, and Klenerman, D.**  
 Constructing a cost-efficient, high-throughput and high-quality single molecule localization microscope for super resolution imaging.  
 _Nature Protocols_, 2021.  
   
