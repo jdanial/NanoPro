@@ -1,6 +1,8 @@
 # NanoPro
+## About
 **NanoPro 1.0** is an affordable, high-quality, user-friendly, and do-it-yourself single-molecule microscope for super-resolution imaging.  
-
+  
+## Assembly and Operation
 **NanoPro 1.0** assembly and operation is described in two parts. Part 1 describes assembly and validation of **NanoPro 1.0** and is published as follows:  
 
 **Danial, JSH, Lam, JYL, Wu, Y, Woolley, M, Cheetham, MR, Emin, D, and Klenerman, D.**  
