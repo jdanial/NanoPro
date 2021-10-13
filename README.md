@@ -9,7 +9,7 @@
 Constructing a cost-efficient, high-throughput and high-quality single molecule localization microscope for super resolution imaging.  
 _Nature Protocols_, 2021.  
   
-Files referred to as supplementary in the Part 1 can be found [here](https://github.com/jdanial/NanoPro/tree/main/Supplementary%20Files).
+Files referred to as supplementary in Part 1 can be found [here](https://github.com/jdanial/NanoPro/tree/main/Supplementary%20Files).
   
 Part 2 describes the installation and operation of the **NanoPro 1.0** control software and can be found [here](https://github.com/jdanial/NanoPro/blob/main/Part%202%2C%20NanoPro%201.0%20Operation%20Manual.pdf).  
   
