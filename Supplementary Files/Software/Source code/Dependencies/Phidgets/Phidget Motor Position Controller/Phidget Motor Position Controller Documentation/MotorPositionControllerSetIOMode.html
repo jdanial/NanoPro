@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Motor Position Controller.lvlib:MotorPositionControllerSetIOMode.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Motor Position Controller.lvlib:MotorPositionControllerSetIOMode.vi"></A><H2>Phidget Motor Position Controller.lvlib:MotorPositionControllerSetIOMode.vi</H2>
+<P><P>The encoder interface mode. Match the mode to the type of encoder you have attached.<ul><li>It is recommended to only change this when the encoder disabled in order to avoid unexpected results.</li></P>
+</P>
+<P><IMG SRC="MotorPositionControllerSetIOModec.png" ALT="Phidget Motor Position Controller.lvlib:MotorPositionControllerSetIOMode.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>IO Mode</B> <P><P>The IO mode value.</P><TABLE border="1"><TR><TH colspan="3">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="1">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>DCC1000_0</B><br/>v204<br/>v205<br/>v206</TD></TD></TR><TR><TD>ENCODER_IO_MODE_PUSH_PULL</TD><TD align="center">1</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>ENCODER_IO_MODE_LINE_DRIVER_2K2</TD><TD align="center">2</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>ENCODER_IO_MODE_LINE_DRIVER_10K</TD><TD align="center">3</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>ENCODER_IO_MODE_OPEN_COLLECTOR_2K2</TD><TD align="center">4</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>ENCODER_IO_MODE_OPEN_COLLECTOR_10K</TD><TD align="center">5</TD><TD align="center">&#10003;</TD></TR>
+</TABLE>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Position Controller</I>: </B><B>Val:</B> ENCODER_IO_MODE_PUSH_PULL<P><P>
+<P><B>DCC1001_0 (ver: 114, 116, 117) <I>Position Controller</I>: </B>Unsupported<P><P><P>
+<P><B>DCC1002_0 (ver: 100) <I>Position Controller</I>: </B>Unsupported<P><P><P>
+<P><B>DCC1100_0 (ver: 113, 114) <I>Position Controller</I>: </B>Unsupported<P><P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

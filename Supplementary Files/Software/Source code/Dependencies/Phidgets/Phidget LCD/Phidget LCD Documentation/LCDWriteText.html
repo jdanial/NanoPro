@@ -1,0 +1,193 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget LCD.lvlib:LCDWriteText.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget LCD.lvlib:LCDWriteText.vi"></A><H2>Phidget LCD.lvlib:LCDWriteText.vi</H2>
+<P>Writes text to the current frame buffer at the specified location<ul><li>Changes made to the frame buffer must be flushed to the LCD screen using <code>flush</code>.</li>
+<P><IMG SRC="LCDWriteTextc.png" ALT="Phidget LCD.lvlib:LCDWriteText.vi"></P>
+<B>Device Support:</B>
+<P><B>1202_0 (ver: 100)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1202_0 (ver: 120, 121)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1202_1 (ver: 123, 124)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1203_0 (ver: 100)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1203_0 (ver: 120, 121)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1203_1 (ver: 123, 124)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1202_2 (ver: 200, 201, 202, 203, 204)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1203_2 (ver: 200, 201, 202, 203, 204)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1204_0 (ver: 100, 101)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1215_0 (ver: 100, 101)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1216_0 (ver: 100, 101)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1217_0 (ver: 100, 101)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1218_0 (ver: 100, 101)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1219_0 (ver: 110, 111, 113)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1220_0 (ver: 110, 111, 113)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1221_0 (ver: 110, 111, 113)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>1222_0 (ver: 110, 111, 113)  <I>Text LCD </I>: </B> Supported<P>
+<P><B>LCD1100_0 (ver: 106, 107, 108)  <I>Graphic LCD </I>: </B> Supported<P></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>Text</B> <P><P>The text to be written</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>xpos</B> <P><P>The X position of the start of the text string</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>ypos</B> <P><P>The Y position of the start of the text string</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>Font</B> <P><P>The font the character belongs to</P><TABLE border="1"><TR><TH colspan="20">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="18">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>1202_0</B><br/>v100<TD align="center" valign="top"><B>1202_0</B><br/>v120<br/>v121<TD align="center" valign="top"><B>1202_1</B><br/>v123<br/>v124<TD align="center" valign="top"><B>1203_0</B><br/>v100<TD align="center" valign="top"><B>1203_0</B><br/>v120<br/>v121<TD align="center" valign="top"><B>1203_1</B><br/>v123<br/>v124</TD><TD align="center" valign="top"><B>1202_2</B><br/>v200<br/>v201<br/>v202<br/>v203<br/>v204<TD align="center" valign="top"><B>1203_2</B><br/>v200<br/>v201<br/>v202<br/>v203<br/>v204</TD><TD align="center" valign="top"><B>1204_0</B><br/>v100<br/>v101</TD><TD align="center" valign="top"><B>1215_0</B><br/>v100<br/>v101<TD align="center" valign="top"><B>1216_0</B><br/>v100<br/>v101<TD align="center" valign="top"><B>1217_0</B><br/>v100<br/>v101<TD align="center" valign="top"><B>1218_0</B><br/>v100<br/>v101</TD><TD align="center" valign="top"><B>1219_0</B><br/>v110<br/>v111<br/>v113<TD align="center" valign="top"><B>1220_0</B><br/>v110<br/>v111<br/>v113<TD align="center" valign="top"><B>1221_0</B><br/>v110<br/>v111<br/>v113<TD align="center" valign="top"><B>1222_0</B><br/>v110<br/>v111<br/>v113</TD><TD align="center" valign="top"><B>LCD1100_0</B><br/>v106<br/>v107<br/>v108</TD></TR><TR><TD>FONT_User1</TD><TD align="center">1</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>FONT_User2</TD><TD align="center">2</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>FONT_6x10</TD><TD align="center">3</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>FONT_5x8</TD><TD align="center">4</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>FONT_6x12</TD><TD align="center">5</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">X</TD><TD align="center">&#10003;</TD></TR>
+</TABLE></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

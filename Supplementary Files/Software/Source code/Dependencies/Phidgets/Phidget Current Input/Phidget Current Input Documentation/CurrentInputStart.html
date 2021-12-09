@@ -1,0 +1,252 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Current Input.lvlib:CurrentInputStart.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Current Input.lvlib:CurrentInputStart.vi"></A><H2>Phidget Current Input.lvlib:CurrentInputStart.vi</H2>
+<P>Opens and initializes a Phidget Current Input</P>
+<P><IMG SRC="CurrentInputStartc.png" ALT="Phidget Current Input.lvlib:CurrentInputStart.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Change Trigger</B> <P><P>The change trigger value</P>
+<P><B>Units: </B>amperes (A)</P>
+<P><B>1061_0 (ver: 100) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0<P>
+<P><B>1061_0 (ver: 200) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0<P>
+<P><B>1061_1 (ver: 300, 301, 302, 303, 304) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0<P>
+<P><B>1063_0 (ver: 100) <I>Bipolar Stepper Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0
+<P><B>1063_1 (ver: 100, 101) <I>Bipolar Stepper Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0<P>
+<P><B>1064_0 (ver: 100, 101, 102) <I>DC Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0
+<P><B>1064_1 (ver: 102) <I>DC Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0<P>
+<P><B>1065_0 (ver: 100, 101) <I>DC Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0
+<P><B>1065_1 (ver: 100, 101) <I>DC Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0<P>
+<P><B>1066_0 (ver: 100) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0
+<P><B>1066_1 (ver: 100, 101) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0<P>
+<P><B>DAQ1400_0 (ver: 112) <I>Current Input</I>: </B><B>Min:</B> 0<B> Max:</B> 0.016<B> Def:</B> 0<P>
+<P><B>VCP1100_0 (ver: 101) <I>Current Input</I>: </B><B>Min:</B> 0<B> Max:</B> 60<B> Def:</B> 0<P>
+<P><B>DCC1000_0 (ver: 115) <I>Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 25<B>Val:</B> 0<P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Current Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 25<B>Val:</B> 0<P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Data Interval</B> <P><P>The data interval value</P>
+<P><B>Units: </B>milliseconds (ms)</P>
+<P><B>1061_0 (ver: 100) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1061_0 (ver: 200) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1061_1 (ver: 300, 301, 302, 303, 304) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1063_0 (ver: 100) <I>Bipolar Stepper Current Sensor</I>: </B><B>Min:</B> 8<B> Max:</B> 60000<B> Def:</B> 256
+<P><B>1063_1 (ver: 100, 101) <I>Bipolar Stepper Current Sensor</I>: </B><B>Min:</B> 8<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1064_0 (ver: 100, 101, 102) <I>DC Motor Current Sensor</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256
+<P><B>1064_1 (ver: 102) <I>DC Motor Current Sensor</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1065_0 (ver: 100, 101) <I>DC Motor Current Sensor</I>: </B><B>Min:</B> 8<B> Max:</B> 60000<B> Def:</B> 256
+<P><B>1065_1 (ver: 100, 101) <I>DC Motor Current Sensor</I>: </B><B>Min:</B> 8<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1066_0 (ver: 100) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256
+<P><B>1066_1 (ver: 100, 101) <I>RC Servo Motor Current Sensor</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>DAQ1400_0 (ver: 112) <I>Current Input</I>: </B><B>Min:</B> 20<B> Max:</B> 60000<B> Def:</B> 250<P>
+<P><B>VCP1100_0 (ver: 101) <I>Current Input</I>: </B><B>Min:</B> 20<B> Max:</B> 60000<B> Def:</B> 250<P>
+<P><B>DCC1000_0 (ver: 115) <I>Current Sensor</I>: </B><B>Min:</B> 100<B> Max:</B> 60000<B>Val:</B> 250<P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Current Sensor</I>: </B><B>Min:</B> 100<B> Max:</B> 60000<B>Val:</B> 250<P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Device Info</B> <P>Information required to specify which Phidget to open</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Serial Number</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Channel</B> <P><P>The channel index</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Port</B> <P><P>The hub port index</P></P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>Connection</B> <P>Selects whether to look for a Phidget on the <B>Local</B> machine, over a <B>Remote</B> network, or both (<B>No Preference</B>)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Timeout (mSec)</B> <P>Timeout in milliseconds</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Attached?</B> <P>Returns TRUE is the device successfully attached, or FALSE otherwise</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Phidget ID</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Serial Number Return</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

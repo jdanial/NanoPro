@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Stepper.lvlib:Stepper_EnableFailsafe.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Stepper.lvlib:Stepper_EnableFailsafe.vi"></A><H2>Phidget Stepper.lvlib:Stepper_EnableFailsafe.vi</H2>
+<P><p>Enables the <b>failsafe</b> feature for the channel, with a given <b>failsafe time</b>.</p><p>The <b>failsafe</b> feature is intended for use in applications where it is important for the channel to enter a known <i>safe state</i> if the program controlling it locks up or crashes. If you do not enable the failsafe feature, the channel will carry out whatever instructions it was last given until it is explicitly told to stop.</p><p>Enabling the failsafe feature starts a recurring <b>failsafe timer</b> for the channel. Once the failsafe timer is enabled, it must be reset within the specified time or the channel will enter a <b>failsafe state</b>. The failsafe timer may be reset either by calling this function again, or using the <code>ResetFailsafe</code> function. Resetting the failsafe timer will reload the timer with the specified <i>failsafe time</i>, starting when the message to reset the timer is received by the Phidget.</p><p>For example: if the failsafe is enabled with a <b>failsafe time</b> of 1000ms, you will have 1000ms to reset the failsafe timer. Every time the failsafe timer is reset, you will have 1000ms from that time to reset the failsafe again.</p><p>If the failsafe timer is not reset before it runs out, the channel will enter a <b>failsafe state</b>. For Stepper channels, this will disengage the motor. Once the channel enters the <b>failsafe state</b>, it will reject any further input until the channel is reopened.</p><p>To prevent the channel from falsely entering the failsafe state, we recommend resetting the failsafe timer as frequently as is practical for your applicaiton. A good rule of thumb is to not let more than a third of the failsafe time pass before resetting the timer.</p><p>Once the failsafe timer has been set, it cannot be disabled by any means other than closing and reopening the channel.</p>
+<P><IMG SRC="Stepper_EnableFailsafec.png" ALT="Phidget Stepper.lvlib:Stepper_EnableFailsafe.vi"></P>
+<B>Device Support:</B>
+<P><B>1062_0 (ver: 101)  <I>Unipolar Stepper Controller </I>: </B> Unsupported<P>
+<P><B>1062_1 (ver: 101, 102)  <I>Unipolar Stepper Controller </I>: </B> Unsupported<P>
+<P><B>1063_0 (ver: 100)  <I>Bipolar Stepper Controller </I>: </B> Unsupported<P>
+<P><B>1063_1 (ver: 100, 101)  <I>Bipolar Stepper Controller </I>: </B> Unsupported<P>
+<P><B>1067_0 (ver: 200, 201)  <I>Bipolar Stepper Controller </I>: </B> Unsupported<P>
+<P><B>STC1000_0 (ver: 100)  <I>Bipolar Stepper Controller </I>: </B> Unsupported<P>
+<P><B>STC1001_0 (ver: 100)  <I>Bipolar Stepper Controller </I>: </B> Unsupported<P>
+<P><B>STC1002_0 (ver: 101)  <I>Bipolar Stepper Controller </I>: </B> Unsupported<P>
+<P><B>STC1003_0 (ver: 100)  <I>Bipolar Stepper Controller </I>: </B> Unsupported<P></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>Failsafe Time</B> <P><P>Failsafe timeout in milliseconds</P>
+<P><B>Units: </B>milliseconds (ms)</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

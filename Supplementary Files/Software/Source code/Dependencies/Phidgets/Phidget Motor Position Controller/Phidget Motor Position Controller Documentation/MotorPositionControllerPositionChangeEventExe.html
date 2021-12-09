@@ -1,0 +1,217 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Motor Position Controller.lvlib:MotorPositionControllerPositionChangeEventExe.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Motor Position Controller.lvlib:MotorPositionControllerPositionChangeEventExe.vi"></A><H2>Phidget Motor Position Controller.lvlib:MotorPositionControllerPositionChangeEventExe.vi</H2>
+<P>The most recent position value will be reported in this event, which occurs when the <code>DataInterval</code> has elapsed.<ul><li>Regardless of the <code>DataInterval</code>, this event will occur only when the position value has changed from the previous value reported.</li><li>Units for <code>Position</code> can be set by the user through the <code>RescaleFactor</code>. The <code>RescaleFactor</code> allows you to use more intuitive units such as rotations, or degrees. 
+<P><IMG SRC="MotorPositionControllerPositionChangeEventExec.png" ALT="Phidget Motor Position Controller.lvlib:MotorPositionControllerPositionChangeEventExe.vi"></P>
+<B>Device Support:</B>
+<P><B>DCC1000_0 (ver: 204, 205, 206)  <I>Position Controller </I>: </B> Supported<P>
+<P><B>DCC1001_0 (ver: 114, 116, 117)  <I>Position Controller </I>: </B> Supported<P>
+<P><B>DCC1002_0 (ver: 100)  <I>Position Controller </I>: </B> Supported<P>
+<P><B>DCC1100_0 (ver: 113, 114)  <I>Position Controller </I>: </B> Supported<P></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1du64.png" ALT="c1du64"></P>
+</TD>
+<TD>
+<B>Devices In</B> <P>A list of devices registered for the same type of event</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ceventregrn.png" ALT="ceventregrn"></P>
+</TD>
+<TD>
+<B>Event Registration Refnum In</B> <P>Event # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Event?</B> <P>Returns TRUE if the event has executed, or FALSE otherwise.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1du64.png" ALT="i1du64"></P>
+</TD>
+<TD>
+<B>Devices Out</B> <P>Same as Devices In</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Index</B> <P>The index of the device that triggered the event within the <B>Devices In</B> array.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>phid</B> <P>Device # Identification of the device that triggered the event.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Position</B> <P><P>The position value</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ieventregrn.png" ALT="ieventregrn"></P>
+</TD>
+<TD>
+<B>Event Registration Refnum</B> <P>Event # Identification</P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

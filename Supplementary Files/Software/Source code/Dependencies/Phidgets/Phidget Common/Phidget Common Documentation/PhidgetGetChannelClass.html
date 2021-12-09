@@ -1,0 +1,179 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Common.lvlib:PhidgetGetChannelClass.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Common.lvlib:PhidgetGetChannelClass.vi"></A><H2>Phidget Common.lvlib:PhidgetGetChannelClass.vi</H2>
+<P><P>Gets the channel class of the channel.</P>
+</P>
+<P><IMG SRC="PhidgetGetChannelClassc.png" ALT="Phidget Common.lvlib:PhidgetGetChannelClass.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu32.png" ALT="iu32"></P>
+</TD>
+<TD>
+<B>Channel Class</B> <P><P>The channel class</P><TABLE border="1"><TR><TH colspan="2">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH></TR>
+<TR></TR><TR><TD>PHIDCHCLASS_NOTHING</TD><TD align="center">0</TD></TR>
+<TR><TD>PHIDCHCLASS_ACCELEROMETER</TD><TD align="center">1</TD></TR>
+<TR><TD>PHIDCHCLASS_CURRENTINPUT</TD><TD align="center">2</TD></TR>
+<TR><TD>PHIDCHCLASS_DATAADAPTER</TD><TD align="center">3</TD></TR>
+<TR><TD>PHIDCHCLASS_DCMOTOR</TD><TD align="center">4</TD></TR>
+<TR><TD>PHIDCHCLASS_DIGITALINPUT</TD><TD align="center">5</TD></TR>
+<TR><TD>PHIDCHCLASS_DIGITALOUTPUT</TD><TD align="center">6</TD></TR>
+<TR><TD>PHIDCHCLASS_DISTANCESENSOR</TD><TD align="center">7</TD></TR>
+<TR><TD>PHIDCHCLASS_ENCODER</TD><TD align="center">8</TD></TR>
+<TR><TD>PHIDCHCLASS_FREQUENCYCOUNTER</TD><TD align="center">9</TD></TR>
+<TR><TD>PHIDCHCLASS_GPS</TD><TD align="center">10</TD></TR>
+<TR><TD>PHIDCHCLASS_LCD</TD><TD align="center">11</TD></TR>
+<TR><TD>PHIDCHCLASS_GYROSCOPE</TD><TD align="center">12</TD></TR>
+<TR><TD>PHIDCHCLASS_HUB</TD><TD align="center">13</TD></TR>
+<TR><TD>PHIDCHCLASS_CAPACITIVETOUCH</TD><TD align="center">14</TD></TR>
+<TR><TD>PHIDCHCLASS_HUMIDITYSENSOR</TD><TD align="center">15</TD></TR>
+<TR><TD>PHIDCHCLASS_IR</TD><TD align="center">16</TD></TR>
+<TR><TD>PHIDCHCLASS_LIGHTSENSOR</TD><TD align="center">17</TD></TR>
+<TR><TD>PHIDCHCLASS_MAGNETOMETER</TD><TD align="center">18</TD></TR>
+<TR><TD>PHIDCHCLASS_MESHDONGLE</TD><TD align="center">19</TD></TR>
+<TR><TD>PHIDCHCLASS_PHSENSOR</TD><TD align="center">37</TD></TR>
+<TR><TD>PHIDCHCLASS_POWERGUARD</TD><TD align="center">20</TD></TR>
+<TR><TD>PHIDCHCLASS_PRESSURESENSOR</TD><TD align="center">21</TD></TR>
+<TR><TD>PHIDCHCLASS_RCSERVO</TD><TD align="center">22</TD></TR>
+<TR><TD>PHIDCHCLASS_RESISTANCEINPUT</TD><TD align="center">23</TD></TR>
+<TR><TD>PHIDCHCLASS_RFID</TD><TD align="center">24</TD></TR>
+<TR><TD>PHIDCHCLASS_SOUNDSENSOR</TD><TD align="center">25</TD></TR>
+<TR><TD>PHIDCHCLASS_SPATIAL</TD><TD align="center">26</TD></TR>
+<TR><TD>PHIDCHCLASS_STEPPER</TD><TD align="center">27</TD></TR>
+<TR><TD>PHIDCHCLASS_TEMPERATURESENSOR</TD><TD align="center">28</TD></TR>
+<TR><TD>PHIDCHCLASS_VOLTAGEINPUT</TD><TD align="center">29</TD></TR>
+<TR><TD>PHIDCHCLASS_VOLTAGEOUTPUT</TD><TD align="center">30</TD></TR>
+<TR><TD>PHIDCHCLASS_VOLTAGERATIOINPUT</TD><TD align="center">31</TD></TR>
+<TR><TD>PHIDCHCLASS_FIRMWAREUPGRADE</TD><TD align="center">32</TD></TR>
+<TR><TD>PHIDCHCLASS_GENERIC</TD><TD align="center">33</TD></TR>
+<TR><TD>PHIDCHCLASS_MOTORPOSITIONCONTROLLER</TD><TD align="center">34</TD></TR>
+<TR><TD>PHIDCHCLASS_BLDCMOTOR</TD><TD align="center">35</TD></TR>
+<TR><TD>PHIDCHCLASS_DICTIONARY</TD><TD align="center">36</TD></TR>
+<TR><TD>PHIDCHCLASS_CURRENTOUTPUT</TD><TD align="center">38</TD></TR>
+</TABLE></P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

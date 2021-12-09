@@ -1,0 +1,153 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget DC Motor.lvlib:DCMotorSetFanMode.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget DC Motor.lvlib:DCMotorSetFanMode.vi"></A><H2>Phidget DC Motor.lvlib:DCMotorSetFanMode.vi</H2>
+<P><P>The <code>FanMode</code> dictates the operating condition of the fan.<ul><li>Choose between on, off, or automatic (based on temperature).</li><li>If the <code>FanMode</code> is set to automatic, the fan will turn on when the temperature reaches 70°C and it will remain on until the temperature falls below 55°C.</li><li>If the <code>FanMode</code> is off, the controller will still turn on the fan if the temperature reaches 85°C and it will remain on until it falls below 70°C.</li></P>
+</P>
+<P><IMG SRC="DCMotorSetFanModec.png" ALT="Phidget DC Motor.lvlib:DCMotorSetFanMode.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Fan Mode</B> <P><P>The fan mode</P><TABLE border="1"><TR><TH colspan="4">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="2">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>DCC1000_0</B><br/>v115</TD><TD align="center" valign="top"><B>DCC1000_0</B><br/>v204<br/>v205<br/>v206</TD></TD></TR><TR><TD>FAN_MODE_OFF</TD><TD align="center">1</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>FAN_MODE_ON</TD><TD align="center">2</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>FAN_MODE_AUTO</TD><TD align="center">3</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+</TABLE>
+<P><B>1060_0 (ver: 100, 110) <I>DC Motor Controller</I>: </B>Unsupported<P><P>
+<P><B>1064_0 (ver: 100, 101, 102) <I>DC Motor Controller</I>: </B>Unsupported<P>
+<P><B>1064_1 (ver: 102) <I>DC Motor Controller</I>: </B>Unsupported<P><P>
+<P><B>1065_0 (ver: 100, 101) <I>DC Motor Controller</I>: </B>Unsupported<P>
+<P><B>1065_1 (ver: 100, 101) <I>DC Motor Controller</I>: </B>Unsupported<P><P>
+<P><B>DCC1000_0 (ver: 115) <I>DC Motor Controller</I>: </B><B>Val:</B> FAN_MODE_AUTO<P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>DC Motor Controller</I>: </B><B>Val:</B> FAN_MODE_AUTO<P><P>
+<P><B>DCC1001_0 (ver: 114, 116, 117) <I>DC Motor Controller</I>: </B>Unsupported<P><P><P>
+<P><B>DCC1002_0 (ver: 100) <I>DC Motor Controller</I>: </B>Unsupported<P><P><P>
+<P><B>DCC1003_0 (ver: 100) <I>DC Motor Controller</I>: </B>Unsupported<P><P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

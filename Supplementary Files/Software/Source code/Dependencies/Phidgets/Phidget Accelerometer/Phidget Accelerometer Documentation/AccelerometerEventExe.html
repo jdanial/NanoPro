@@ -1,0 +1,249 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Accelerometer.lvlib:AccelerometerEventExe.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Accelerometer.lvlib:AccelerometerEventExe.vi"></A><H2>Phidget Accelerometer.lvlib:AccelerometerEventExe.vi</H2>
+<P>The most recent acceleration values the channel has measured will be reported in this event, which occurs when the <code>DataInterval</code> has elapsed.<ul><li>If a <code>AccelerationChangeTrigger</code> has been set to a non-zero value, the <code>AccelerationChange</code> event will not occur until the acceleration has changed by at least the <code>AccelerationChangeTrigger</code> value.</li>
+<P><IMG SRC="AccelerometerEventExec.png" ALT="Phidget Accelerometer.lvlib:AccelerometerEventExe.vi"></P>
+<B>Device Support:</B>
+<P><B>1008_0 (ver: 101)  <I>2-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1041_0 (ver: 200, 201, 202)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1042_0 (ver: 300, 301, 302)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1043_0 (ver: 300, 301, 302)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1043_1 (ver: 302)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1044_0 (ver: 400, 401, 402)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1044_1 (ver: 500)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1049_0 (ver: 100, 101, 102)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1053_0 (ver: 300, 301, 302)  <I>2-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1056_0 (ver: 100, 101, 102)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1056_0 (ver: 200)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>1059_0 (ver: 400, 401)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>MOT1100_0 (ver: 201, 202)  <I>3-Axis Accelerometer </I>: </B> Supported<P>
+<P><B>MOT1101_0 (ver: 112, 113)  <I>3-Axis Accelerometer </I>: </B> Supported<P></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1du64.png" ALT="c1du64"></P>
+</TD>
+<TD>
+<B>Devices In</B> <P>A list of devices registered for the same type of event</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ceventregrn.png" ALT="ceventregrn"></P>
+</TD>
+<TD>
+<B>Event Registration Refnum In</B> <P>Event # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Event?</B> <P>Returns TRUE if the event has executed, or FALSE otherwise.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1du64.png" ALT="i1du64"></P>
+</TD>
+<TD>
+<B>Devices Out</B> <P>Same as Devices In</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Index</B> <P>The index of the device that triggered the event within the <B>Devices In</B> array.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>phid</B> <P>Device # Identification of the device that triggered the event.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1ddbl.png" ALT="i1ddbl"></P>
+</TD>
+<TD>
+<B>Accel Data</B> <P><P>The acceleration values</P></P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Acceleration</B> <P></P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="idbl.png" ALT="idbl"></P>
+</TD>
+<TD>
+<B>Timestamp</B> <P><P>The timestamp value</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ieventregrn.png" ALT="ieventregrn"></P>
+</TD>
+<TD>
+<B>Event Registration Refnum Out</B> <P>Same as Event Registration Refnum In</P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

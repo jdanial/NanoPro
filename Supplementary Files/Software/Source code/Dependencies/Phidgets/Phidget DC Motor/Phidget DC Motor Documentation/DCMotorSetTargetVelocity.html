@@ -1,0 +1,150 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget DC Motor.lvlib:DCMotorSetTargetVelocity.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget DC Motor.lvlib:DCMotorSetTargetVelocity.vi"></A><H2>Phidget DC Motor.lvlib:DCMotorSetTargetVelocity.vi</H2>
+<P><P>The average voltage across the motor is based on the <code>TargetVelocity</code> value.<ul><li>At a constant load, increasing the target velocity will increase the speed of the motor.</li><li><code>TargetVelocity</code> is bounded by -1×<code>MaxVelocity</code> and <code>MaxVelocity</code>, where a sign change (±) is indicitave of a direction change.<li>Setting <code>TargetVelocity</code> to <code>MinVelocity</code> will stop the motor. See <code>TargetBrakingStrength</code> for more information on stopping the motor.</li><li>The units of <code>TargetVelocity</code> and <code>Acceleration</code> refer to 'duty cycle'. This is because the controller controls velocity by rapidly switching the power on/off (i.e. changing the duty cycle) in order to manipulate the voltage across the motor.</li></P>
+</P>
+<P><IMG SRC="DCMotorSetTargetVelocityc.png" ALT="Phidget DC Motor.lvlib:DCMotorSetTargetVelocity.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Target Velocity</B> <P><P>The velocity value</P>
+<P><B>Units: </B>duty cycle (duty cycle)</P>
+<P><B>1060_0 (ver: 100, 110) <I>DC Motor Controller</I>: </B><B>Val:</B> 0<P>
+<P><B>1064_0 (ver: 100, 101, 102) <I>DC Motor Controller</I>: </B><B>Val:</B> 0
+<P><B>1064_1 (ver: 102) <I>DC Motor Controller</I>: </B><B>Val:</B> 0<P>
+<P><B>1065_0 (ver: 100, 101) <I>DC Motor Controller</I>: </B><B>Val:</B> 0
+<P><B>1065_1 (ver: 100, 101) <I>DC Motor Controller</I>: </B><B>Val:</B> 0<P>
+<P><B>DCC1000_0 (ver: 115) <I>DC Motor Controller</I>: </B><P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>DC Motor Controller</I>: </B><P><P>
+<P><B>DCC1001_0 (ver: 114, 116, 117) <I>DC Motor Controller</I>: </B><P><P>
+<P><B>DCC1002_0 (ver: 100) <I>DC Motor Controller</I>: </B><P><P>
+<P><B>DCC1003_0 (ver: 100) <I>DC Motor Controller</I>: </B><P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

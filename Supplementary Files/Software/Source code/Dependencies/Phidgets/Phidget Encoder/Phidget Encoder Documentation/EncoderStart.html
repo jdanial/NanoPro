@@ -1,0 +1,278 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Encoder.lvlib:EncoderStart.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Encoder.lvlib:EncoderStart.vi"></A><H2>Phidget Encoder.lvlib:EncoderStart.vi</H2>
+<P>Opens and initializes a Phidget Encoder</P>
+<P><IMG SRC="EncoderStartc.png" ALT="Phidget Encoder.lvlib:EncoderStart.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Change Trigger</B> <P>The amount of position change required for a change event to fire.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Data Interval</B> <P>The interval between data events from the device channel</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Device Info</B> <P>Information required to specify which Phidget to open</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Serial Number</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Channel</B> <P><P>The channel index</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Port</B> <P><P>The hub port index</P></P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>Connection</B> <P>Selects whether to look for a Phidget on the <B>Local</B> machine, over a <B>Remote</B> network, or both (<B>No Preference</B>)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Timeout (mSec)</B> <P>Timeout in milliseconds</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Enabled</B> <P><P>The enabled value</P>
+<P><B>1047_0 (ver: 100, 101, 102) <I>Encoder Input</I>: </B><B> Def:</B> 1
+<P><B>1047_1 (ver: 102, 103) <I>Encoder Input</I>: </B><B> Def:</B> 1<P>
+<P><B>1052_0 (ver: 100) <I>Encoder Input</I>: </B><B>Val:</B> 1<P>
+<P><B>1052_0 (ver: 101, 102, 103) <I>Encoder Input</I>: </B><B>Val:</B> 1<P>
+<P><B>1052_0 (ver: 110, 111) <I>Encoder Input</I>: </B><B>Val:</B> 1<P>
+<P><B>1057_0 (ver: 300, 301) <I>Encoder Input</I>: </B><B>Val:</B> 1
+<P><B>1057_1 (ver: 302) <I>Encoder Input</I>: </B><B>Val:</B> 1
+<P><B>1057_2 (ver: 302) <I>Encoder Input</I>: </B><B>Val:</B> 1<P>
+<P><B>1065_0 (ver: 100, 101) <I>Encoder Input</I>: </B><B>Val:</B> 1
+<P><B>1065_1 (ver: 100, 101) <I>Encoder Input</I>: </B><B>Val:</B> 1<P>
+<P><B>DCC1000_0 (ver: 115) <I>Encoder Input</I>: </B><B>Val:</B> 1<P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Encoder Input</I>: </B><B>Val:</B> 1<P><P>
+<P><B>DCC1001_0 (ver: 114, 116, 117) <I>Encoder Input</I>: </B><B>Val:</B> 1<P><P>
+<P><B>DCC1002_0 (ver: 100) <I>Encoder Input</I>: </B><B>Val:</B> 1<P><P>
+<P><B>ENC1000_0 (ver: 101) <I>Encoder Input</I>: </B><B> Def:</B> 1<P>
+<P><B>HIN1101_0 (ver: 101) <I>Encoder Input</I>: </B><B> Def:</B> 1<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>IO Mode</B> <P><P>The IO mode value.</P><TABLE border="1"><TR><TH colspan="5">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="3">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>DCC1000_0</B><br/>v115</TD><TD align="center" valign="top"><B>DCC1000_0</B><br/>v204<br/>v205<br/>v206</TD></TD><TD align="center" valign="top"><B>ENC1000_0</B><br/>v101</TD></TR><TR><TD>ENCODER_IO_MODE_PUSH_PULL</TD><TD align="center">1</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>ENCODER_IO_MODE_LINE_DRIVER_2K2</TD><TD align="center">2</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>ENCODER_IO_MODE_LINE_DRIVER_10K</TD><TD align="center">3</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>ENCODER_IO_MODE_OPEN_COLLECTOR_2K2</TD><TD align="center">4</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>ENCODER_IO_MODE_OPEN_COLLECTOR_10K</TD><TD align="center">5</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+</TABLE>
+<P><B>1047_0 (ver: 100, 101, 102) <I>Encoder Input</I>: </B>Unsupported<P>
+<P><B>1047_1 (ver: 102, 103) <I>Encoder Input</I>: </B>Unsupported<P><P>
+<P><B>1052_0 (ver: 100) <I>Encoder Input</I>: </B>Unsupported<P><P>
+<P><B>1052_0 (ver: 101, 102, 103) <I>Encoder Input</I>: </B>Unsupported<P><P>
+<P><B>1052_0 (ver: 110, 111) <I>Encoder Input</I>: </B>Unsupported<P><P>
+<P><B>1057_0 (ver: 300, 301) <I>Encoder Input</I>: </B>Unsupported<P>
+<P><B>1057_1 (ver: 302) <I>Encoder Input</I>: </B>Unsupported<P>
+<P><B>1057_2 (ver: 302) <I>Encoder Input</I>: </B>Unsupported<P><P>
+<P><B>1065_0 (ver: 100, 101) <I>Encoder Input</I>: </B>Unsupported<P>
+<P><B>1065_1 (ver: 100, 101) <I>Encoder Input</I>: </B>Unsupported<P><P>
+<P><B>DCC1000_0 (ver: 115) <I>Encoder Input</I>: </B><B>Val:</B> ENCODER_IO_MODE_PUSH_PULL<P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Encoder Input</I>: </B><B>Val:</B> ENCODER_IO_MODE_PUSH_PULL<P><P>
+<P><B>DCC1001_0 (ver: 114, 116, 117) <I>Encoder Input</I>: </B>Unsupported<P><P><P>
+<P><B>DCC1002_0 (ver: 100) <I>Encoder Input</I>: </B>Unsupported<P><P><P>
+<P><B>ENC1000_0 (ver: 101) <I>Encoder Input</I>: </B><B> Def:</B> ENCODER_IO_MODE_PUSH_PULL<P>
+<P><B>HIN1101_0 (ver: 101) <I>Encoder Input</I>: </B>Unsupported<P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Attached?</B> <P>Returns TRUE is the device successfully attached, or FALSE otherwise</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Phidget ID</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Serial Number Return</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

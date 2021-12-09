@@ -1,0 +1,276 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Common.lvlib:PhidgetGetDeviceID.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Common.lvlib:PhidgetGetDeviceID.vi"></A><H2>Phidget Common.lvlib:PhidgetGetDeviceID.vi</H2>
+<P><P>Gets the ${CONSTANT:DeviceID} for the Phidget which this channel is a part of.</P>
+</P>
+<P><IMG SRC="PhidgetGetDeviceIDc.png" ALT="Phidget Common.lvlib:PhidgetGetDeviceID.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu32.png" ALT="iu32"></P>
+</TD>
+<TD>
+<B>Devie ID</B> <P><P>The device id of the device the channel is a part of</P><TABLE border="1"><TR><TH colspan="2">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH></TR>
+<TR></TR><TR><TD>PHIDID_NOTHING</TD><TD align="center">0</TD></TR>
+<TR><TD>PHIDID_INTERFACEKIT_4_8_8</TD><TD align="center">1</TD></TR>
+<TR><TD>PHIDID_1000</TD><TD align="center">2</TD></TR>
+<TR><TD>PHIDID_1001</TD><TD align="center">3</TD></TR>
+<TR><TD>PHIDID_1002</TD><TD align="center">4</TD></TR>
+<TR><TD>PHIDID_1008</TD><TD align="center">5</TD></TR>
+<TR><TD>PHIDID_1010_1013_1018_1019</TD><TD align="center">6</TD></TR>
+<TR><TD>PHIDID_1011</TD><TD align="center">7</TD></TR>
+<TR><TD>PHIDID_1012</TD><TD align="center">8</TD></TR>
+<TR><TD>PHIDID_1014</TD><TD align="center">9</TD></TR>
+<TR><TD>PHIDID_1015</TD><TD align="center">10</TD></TR>
+<TR><TD>PHIDID_1016</TD><TD align="center">11</TD></TR>
+<TR><TD>PHIDID_1017</TD><TD align="center">12</TD></TR>
+<TR><TD>PHIDID_1023</TD><TD align="center">13</TD></TR>
+<TR><TD>PHIDID_1024</TD><TD align="center">14</TD></TR>
+<TR><TD>PHIDID_1030</TD><TD align="center">15</TD></TR>
+<TR><TD>PHIDID_1031</TD><TD align="center">16</TD></TR>
+<TR><TD>PHIDID_1032</TD><TD align="center">17</TD></TR>
+<TR><TD>PHIDID_1040</TD><TD align="center">18</TD></TR>
+<TR><TD>PHIDID_1041</TD><TD align="center">19</TD></TR>
+<TR><TD>PHIDID_1042</TD><TD align="center">20</TD></TR>
+<TR><TD>PHIDID_1043</TD><TD align="center">21</TD></TR>
+<TR><TD>PHIDID_1044</TD><TD align="center">22</TD></TR>
+<TR><TD>PHIDID_1045</TD><TD align="center">23</TD></TR>
+<TR><TD>PHIDID_1046</TD><TD align="center">24</TD></TR>
+<TR><TD>PHIDID_1047</TD><TD align="center">25</TD></TR>
+<TR><TD>PHIDID_1048</TD><TD align="center">26</TD></TR>
+<TR><TD>PHIDID_1049</TD><TD align="center">27</TD></TR>
+<TR><TD>PHIDID_1051</TD><TD align="center">28</TD></TR>
+<TR><TD>PHIDID_1052</TD><TD align="center">29</TD></TR>
+<TR><TD>PHIDID_1053</TD><TD align="center">30</TD></TR>
+<TR><TD>PHIDID_1054</TD><TD align="center">31</TD></TR>
+<TR><TD>PHIDID_1055</TD><TD align="center">32</TD></TR>
+<TR><TD>PHIDID_1056</TD><TD align="center">33</TD></TR>
+<TR><TD>PHIDID_1057</TD><TD align="center">34</TD></TR>
+<TR><TD>PHIDID_1058</TD><TD align="center">35</TD></TR>
+<TR><TD>PHIDID_1059</TD><TD align="center">36</TD></TR>
+<TR><TD>PHIDID_1060</TD><TD align="center">37</TD></TR>
+<TR><TD>PHIDID_1061</TD><TD align="center">38</TD></TR>
+<TR><TD>PHIDID_1062</TD><TD align="center">39</TD></TR>
+<TR><TD>PHIDID_1063</TD><TD align="center">40</TD></TR>
+<TR><TD>PHIDID_1064</TD><TD align="center">41</TD></TR>
+<TR><TD>PHIDID_1065</TD><TD align="center">42</TD></TR>
+<TR><TD>PHIDID_1066</TD><TD align="center">43</TD></TR>
+<TR><TD>PHIDID_1067</TD><TD align="center">44</TD></TR>
+<TR><TD>PHIDID_1202_1203</TD><TD align="center">45</TD></TR>
+<TR><TD>PHIDID_1204</TD><TD align="center">46</TD></TR>
+<TR><TD>PHIDID_1215__1218</TD><TD align="center">47</TD></TR>
+<TR><TD>PHIDID_1219__1222</TD><TD align="center">48</TD></TR>
+<TR><TD>PHIDID_ADP1000</TD><TD align="center">49</TD></TR>
+<TR><TD>PHIDID_ADP1001</TD><TD align="center">50</TD></TR>
+<TR><TD>PHIDID_DAQ1000</TD><TD align="center">51</TD></TR>
+<TR><TD>PHIDID_DAQ1200</TD><TD align="center">52</TD></TR>
+<TR><TD>PHIDID_DAQ1300</TD><TD align="center">53</TD></TR>
+<TR><TD>PHIDID_DAQ1301</TD><TD align="center">54</TD></TR>
+<TR><TD>PHIDID_DAQ1400</TD><TD align="center">55</TD></TR>
+<TR><TD>PHIDID_DAQ1500</TD><TD align="center">56</TD></TR>
+<TR><TD>PHIDID_DCC1000</TD><TD align="center">57</TD></TR>
+<TR><TD>PHIDID_DST1000</TD><TD align="center">58</TD></TR>
+<TR><TD>PHIDID_DST1200</TD><TD align="center">59</TD></TR>
+<TR><TD>PHIDID_ENC1000</TD><TD align="center">60</TD></TR>
+<TR><TD>PHIDID_HIN1000</TD><TD align="center">61</TD></TR>
+<TR><TD>PHIDID_HIN1001</TD><TD align="center">62</TD></TR>
+<TR><TD>PHIDID_HIN1100</TD><TD align="center">63</TD></TR>
+<TR><TD>PHIDID_HUB0000</TD><TD align="center">64</TD></TR>
+<TR><TD>PHIDID_HUB0001</TD><TD align="center">65</TD></TR>
+<TR><TD>PHIDID_HUB0002</TD><TD align="center">66</TD></TR>
+<TR><TD>PHIDID_HUB0004</TD><TD align="center">67</TD></TR>
+<TR><TD>PHIDID_HUB0005</TD><TD align="center">68</TD></TR>
+<TR><TD>PHIDID_HUM1000</TD><TD align="center">69</TD></TR>
+<TR><TD>PHIDID_LCD1100</TD><TD align="center">70</TD></TR>
+<TR><TD>PHIDID_LED1000</TD><TD align="center">71</TD></TR>
+<TR><TD>PHIDID_LUX1000</TD><TD align="center">72</TD></TR>
+<TR><TD>PHIDID_MOT1100</TD><TD align="center">73</TD></TR>
+<TR><TD>PHIDID_MOT1101</TD><TD align="center">74</TD></TR>
+<TR><TD>PHIDID_OUT1000</TD><TD align="center">75</TD></TR>
+<TR><TD>PHIDID_OUT1001</TD><TD align="center">76</TD></TR>
+<TR><TD>PHIDID_OUT1002</TD><TD align="center">77</TD></TR>
+<TR><TD>PHIDID_OUT1100</TD><TD align="center">78</TD></TR>
+<TR><TD>PHIDID_PRE1000</TD><TD align="center">79</TD></TR>
+<TR><TD>PHIDID_RCC1000</TD><TD align="center">80</TD></TR>
+<TR><TD>PHIDID_REL1000</TD><TD align="center">81</TD></TR>
+<TR><TD>PHIDID_REL1100</TD><TD align="center">82</TD></TR>
+<TR><TD>PHIDID_REL1101</TD><TD align="center">83</TD></TR>
+<TR><TD>PHIDID_SAF1000</TD><TD align="center">84</TD></TR>
+<TR><TD>PHIDID_SND1000</TD><TD align="center">85</TD></TR>
+<TR><TD>PHIDID_STC1000</TD><TD align="center">86</TD></TR>
+<TR><TD>PHIDID_TMP1000</TD><TD align="center">87</TD></TR>
+<TR><TD>PHIDID_TMP1100</TD><TD align="center">88</TD></TR>
+<TR><TD>PHIDID_TMP1101</TD><TD align="center">89</TD></TR>
+<TR><TD>PHIDID_TMP1200</TD><TD align="center">90</TD></TR>
+<TR><TD>PHIDID_TMP1300</TD><TD align="center">91</TD></TR>
+<TR><TD>PHIDID_VCP1000</TD><TD align="center">92</TD></TR>
+<TR><TD>PHIDID_VCP1001</TD><TD align="center">93</TD></TR>
+<TR><TD>PHIDID_VCP1002</TD><TD align="center">94</TD></TR>
+<TR><TD>PHIDID_DIGITALINPUT_PORT</TD><TD align="center">95</TD></TR>
+<TR><TD>PHIDID_DIGITALOUTPUT_PORT</TD><TD align="center">96</TD></TR>
+<TR><TD>PHIDID_VOLTAGEINPUT_PORT</TD><TD align="center">97</TD></TR>
+<TR><TD>PHIDID_VOLTAGERATIOINPUT_PORT</TD><TD align="center">98</TD></TR>
+<TR><TD>PHIDID_GENERICUSB</TD><TD align="center">99</TD></TR>
+<TR><TD>PHIDID_GENERICVINT</TD><TD align="center">100</TD></TR>
+<TR><TD>PHIDID_FIRMWARE_UPGRADE_USB</TD><TD align="center">101</TD></TR>
+<TR><TD>PHIDID_FIRMWARE_UPGRADE_STM32F0</TD><TD align="center">102</TD></TR>
+<TR><TD>PHIDID_FIRMWARE_UPGRADE_STM8S</TD><TD align="center">103</TD></TR>
+<TR><TD>PHIDID_FIRMWARE_UPGRADE_SPI</TD><TD align="center">104</TD></TR>
+<TR><TD>PHIDID_VCP1100</TD><TD align="center">105</TD></TR>
+<TR><TD>PHIDID_DCC1100</TD><TD align="center">108</TD></TR>
+<TR><TD>PHIDID_HIN1101</TD><TD align="center">109</TD></TR>
+<TR><TD>PHIDID_DCC1001</TD><TD align="center">110</TD></TR>
+<TR><TD>PHIDID_DICTIONARY</TD><TD align="center">111</TD></TR>
+<TR><TD>PHIDID_STC1001</TD><TD align="center">115</TD></TR>
+<TR><TD>PHIDID_USBSWITCH</TD><TD align="center">116</TD></TR>
+<TR><TD>PHIDID_DCC1002</TD><TD align="center">117</TD></TR>
+<TR><TD>PHIDID_STC1002</TD><TD align="center">118</TD></TR>
+<TR><TD>PHIDID_STC1003</TD><TD align="center">119</TD></TR>
+<TR><TD>PHIDID_DCC1003</TD><TD align="center">120</TD></TR>
+<TR><TD>PHIDID_DST1001</TD><TD align="center">121</TD></TR>
+<TR><TD>PHIDID_CURLOOP</TD><TD align="center">122</TD></TR>
+<TR><TD>PHIDID_HUB5000</TD><TD align="center">123</TD></TR>
+<TR><TD>PHIDID_RCC0004</TD><TD align="center">124</TD></TR>
+<TR><TD>PHIDID_UNKNOWN</TD><TD align="center">125</TD></TR>
+<TR><TD>PHIDID_DST1002</TD><TD align="center">126</TD></TR>
+<TR><TD>PHIDID_HUM1001</TD><TD align="center">127</TD></TR>
+<TR><TD>PHIDID_DCC1004</TD><TD align="center">128</TD></TR>
+<TR><TD>PHIDID_DCC1005</TD><TD align="center">129</TD></TR>
+<TR><TD>PHIDID_MOT0108</TD><TD align="center">131</TD></TR>
+<TR><TD>PHIDID_ADP_RS232</TD><TD align="center">132</TD></TR>
+<TR><TD>PHIDID_ADP_RS485_422</TD><TD align="center">133</TD></TR>
+<TR><TD>PHIDID_ADP_SERIAL</TD><TD align="center">134</TD></TR>
+<TR><TD>PHIDID_1067_1</TD><TD align="center">135</TD></TR>
+<TR><TD>PHIDID_HUM1100</TD><TD align="center">136</TD></TR>
+<TR><TD>PHIDID_MOT1102</TD><TD align="center">137</TD></TR>
+<TR><TD>PHIDID_VINTACCEL</TD><TD align="center">138</TD></TR>
+<TR><TD>PHIDID_TP_DIAGNOSER</TD><TD align="center">139</TD></TR>
+<TR><TD>PHIDID_MOT0109</TD><TD align="center">140</TD></TR>
+<TR><TD>PHIDID_MOT0110</TD><TD align="center">141</TD></TR>
+</TABLE></P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

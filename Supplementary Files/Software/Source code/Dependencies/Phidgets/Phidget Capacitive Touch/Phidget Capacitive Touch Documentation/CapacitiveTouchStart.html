@@ -1,0 +1,231 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Capacitive Touch.lvlib:CapacitiveTouchStart.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Capacitive Touch.lvlib:CapacitiveTouchStart.vi"></A><H2>Phidget Capacitive Touch.lvlib:CapacitiveTouchStart.vi</H2>
+<P>Opens and initializes a Phidget Capacitive Touch</P>
+<P><IMG SRC="CapacitiveTouchStartc.png" ALT="Phidget Capacitive Touch.lvlib:CapacitiveTouchStart.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Change Trigger</B> <P><P>The change trigger value</P>
+<P><B>1015_0 (ver: 500, 101, 102) <I>Capacitive Slider Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0.005<P>
+<P><B>1016_0 (ver: 510, 101, 102) <I>Capacitive Scroll Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0.005<P>
+<P><B>HIN1000_0 (ver: 104) <I>Capacitive Touch Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 1<B> Def:</B> 0<P>
+<P><B>HIN1001_0 (ver: 103) <I>Capacitive Touch Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 0.5<B> Def:</B> 0<P>
+<P><B>HIN1001_0 (ver: 103) <I>Capacitive Scroll Wheel</I>: </B><B>Min:</B> 0<B> Max:</B> 0.5<B> Def:</B> 0<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Data Interval</B> <P><P>The data interval value</P>
+<P><B>Units: </B>milliseconds (ms)</P>
+<P><B>1015_0 (ver: 500, 101, 102) <I>Capacitive Slider Sensor</I>: </B><B>Min:</B> 60<B> Max:</B> 1000<B> Def:</B> 60<P>
+<P><B>1016_0 (ver: 510, 101, 102) <I>Capacitive Scroll Sensor</I>: </B><B>Min:</B> 60<B> Max:</B> 1000<B> Def:</B> 60<P>
+<P><B>HIN1000_0 (ver: 104) <I>Capacitive Touch Sensor</I>: </B><B>Min:</B> 25<B> Max:</B> 1000<B> Def:</B> 25<P>
+<P><B>HIN1001_0 (ver: 103) <I>Capacitive Touch Sensor</I>: </B><B>Min:</B> 20<B> Max:</B> 250<B> Def:</B> 20<P>
+<P><B>HIN1001_0 (ver: 103) <I>Capacitive Scroll Wheel</I>: </B><B>Min:</B> 20<B> Max:</B> 250<B> Def:</B> 20<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Device Info</B> <P>Information required to specify which Phidget to open</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Serial Number</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Channel</B> <P><P>The channel index</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Port</B> <P><P>The hub port index</P></P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>Connection</B> <P>Selects whether to look for a Phidget on the <B>Local</B> machine, over a <B>Remote</B> network, or both (<B>No Preference</B>)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Timeout (mSec)</B> <P>Timeout in milliseconds</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Attached?</B> <P>Returns TRUE is the device successfully attached, or FALSE otherwise</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Phidget ID</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Serial Number Return</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

@@ -1,0 +1,2 @@
+This set of projects needs to be copied into the LabVIEW instr.lib folder before
+it can be properly worked on from within LabVIEW.

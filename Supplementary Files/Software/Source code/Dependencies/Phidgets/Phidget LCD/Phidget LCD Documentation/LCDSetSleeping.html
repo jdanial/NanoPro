@@ -1,0 +1,157 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget LCD.lvlib:LCDSetSleeping.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget LCD.lvlib:LCDSetSleeping.vi"></A><H2>Phidget LCD.lvlib:LCDSetSleeping.vi</H2>
+<P><P>The on/off state of <code>Sleeping</code>. Putting the device to sleep turns off the display and backlight in order to save power.<ul><li>The device will still take commands while asleep, and will wake up if the screen is flushed, or if the contrast or backlight are changed.</li><li>When the device wakes up, it will return to its last known state, taking into account any changes that happened while asleep.</li></P>
+</P>
+<P><IMG SRC="LCDSetSleepingc.png" ALT="Phidget LCD.lvlib:LCDSetSleeping.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>Sleeping</B> <P><P>The sleep status</P>
+<P><B>1202_0 (ver: 100) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1202_0 (ver: 120, 121) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1202_1 (ver: 123, 124) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1203_0 (ver: 100) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1203_0 (ver: 120, 121) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1203_1 (ver: 123, 124) <I>Text LCD</I>: </B>Unsupported<P><P>
+<P><B>1202_2 (ver: 200, 201, 202, 203, 204) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1203_2 (ver: 200, 201, 202, 203, 204) <I>Text LCD</I>: </B>Unsupported<P><P>
+<P><B>1204_0 (ver: 100, 101) <I>Text LCD</I>: </B>Unsupported<P><P>
+<P><B>1215_0 (ver: 100, 101) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1216_0 (ver: 100, 101) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1217_0 (ver: 100, 101) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1218_0 (ver: 100, 101) <I>Text LCD</I>: </B>Unsupported<P><P>
+<P><B>1219_0 (ver: 110, 111, 113) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1220_0 (ver: 110, 111, 113) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1221_0 (ver: 110, 111, 113) <I>Text LCD</I>: </B>Unsupported<P>
+<P><B>1222_0 (ver: 110, 111, 113) <I>Text LCD</I>: </B>Unsupported<P><P>
+<P><B>LCD1100_0 (ver: 106, 107, 108) <I>Graphic LCD</I>: </B><B>Val:</B> 1<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

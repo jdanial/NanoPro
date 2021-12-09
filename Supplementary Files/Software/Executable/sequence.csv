@@ -1,0 +1,13 @@
+Number of repeats,1
+Number of X wells,8
+Number of Y wells,3
+Number of X FOVs,2
+Number of Y FOVs,2
+Lasers,Red
+X wells distance (um),4500
+Y wells distance (um),4500
+X FOVs distance (um),200
+Y FOVs distance (um),200
+Frames,50
+UV activation step intensity (V),0
+UV activation step duration (min),60

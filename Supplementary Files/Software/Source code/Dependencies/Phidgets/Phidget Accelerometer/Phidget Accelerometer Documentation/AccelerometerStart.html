@@ -1,0 +1,250 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Accelerometer.lvlib:AccelerometerStart.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Accelerometer.lvlib:AccelerometerStart.vi"></A><H2>Phidget Accelerometer.lvlib:AccelerometerStart.vi</H2>
+<P>Opens and initializes a Phidget Accelerometer</P>
+<P><IMG SRC="AccelerometerStartc.png" ALT="Phidget Accelerometer.lvlib:AccelerometerStart.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Change Trigger</B> <P><P>The change trigger value</P>
+<P><B>Units: </B>g-force (g)</P>
+<P><B>1008_0 (ver: 101) <I>2-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 4<B> Def:</B> 0<P>
+<P><B>1041_0 (ver: 200, 201, 202) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 16<B> Def:</B> 0<P>
+<P><B>1042_0 (ver: 300, 301, 302) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 16<B> Def:</B> 0<P>
+<P><B>1043_0 (ver: 300, 301, 302) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 16<B> Def:</B> 0
+<P><B>1043_1 (ver: 302) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 16<B> Def:</B> 0<P>
+<P><B>1044_0 (ver: 400, 401, 402) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 16<B> Def:</B> 0<P>
+<P><B>1044_1 (ver: 500) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 16<B> Def:</B> 0<P>
+<P><B>1049_0 (ver: 100, 101, 102) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 10<B> Def:</B> 0<P>
+<P><B>1053_0 (ver: 300, 301, 302) <I>2-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 10<B> Def:</B> 0<P>
+<P><B>1056_0 (ver: 100, 101, 102) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 10<B> Def:</B> 0<P>
+<P><B>1056_0 (ver: 200) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 10<B> Def:</B> 0<P>
+<P><B>1059_0 (ver: 400, 401) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 6<B> Def:</B> 0<P>
+<P><B>MOT1100_0 (ver: 201, 202) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 16<B> Def:</B> 0<P>
+<P><B>MOT1101_0 (ver: 112, 113) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 0<B> Max:</B> 16<B> Def:</B> 0<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Data Interval</B> <P><P>The data interval value</P>
+<P><B>Units: </B>milliseconds (ms)</P>
+<P><B>1008_0 (ver: 101) <I>2-Axis Accelerometer</I>: </B><B>Min:</B> 39<B> Max:</B> 1000<B> Def:</B> 273<P>
+<P><B>1041_0 (ver: 200, 201, 202) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 1<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1042_0 (ver: 300, 301, 302) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 4<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1043_0 (ver: 300, 301, 302) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 1<B> Max:</B> 1000<B> Def:</B> 256
+<P><B>1043_1 (ver: 302) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 1<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1044_0 (ver: 400, 401, 402) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 4<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1044_1 (ver: 500) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 4<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1049_0 (ver: 100, 101, 102) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 1<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1053_0 (ver: 300, 301, 302) <I>2-Axis Accelerometer</I>: </B><B>Min:</B> 16<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1056_0 (ver: 100, 101, 102) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 4<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1056_0 (ver: 200) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 4<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>1059_0 (ver: 400, 401) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 16<B> Max:</B> 1000<B> Def:</B> 256<P>
+<P><B>MOT1100_0 (ver: 201, 202) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 10<B> Max:</B> 60000<B> Def:</B> 250<P>
+<P><B>MOT1101_0 (ver: 112, 113) <I>3-Axis Accelerometer</I>: </B><B>Min:</B> 20<B> Max:</B> 60000<B> Def:</B> 250<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Device Info</B> <P>Information required to specify which Phidget to open</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Serial Number</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Channel</B> <P><P>The channel index</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Port</B> <P><P>The hub port index</P></P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>Connection</B> <P>Selects whether to look for a Phidget on the <B>Local</B> machine, over a <B>Remote</B> network, or both (<B>No Preference</B>)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Timeout (mSec)</B> <P>Timeout in milliseconds</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Attached?</B> <P>Returns TRUE is the device successfully attached, or FALSE otherwise</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Phidget ID</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Serial Number Return</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

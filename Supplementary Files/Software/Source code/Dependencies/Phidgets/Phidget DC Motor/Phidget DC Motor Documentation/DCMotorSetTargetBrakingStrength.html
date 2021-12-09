@@ -1,0 +1,149 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget DC Motor.lvlib:DCMotorSetTargetBrakingStrength.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget DC Motor.lvlib:DCMotorSetTargetBrakingStrength.vi"></A><H2>Phidget DC Motor.lvlib:DCMotorSetTargetBrakingStrength.vi</H2>
+<P><P><p>This setting allows you to choose how hard the motor will resist being turned when it is not being driven forward or reverse (<code>Velocity</code> = 0). The <code>TargetBrakingStrength</code> sets the relative amount of electrical braking to be applied to the DC motor, with <code>MinBrakingStrength</code> corresponding to no braking (free-wheeling), and <code>MaxBrakingStrength</code> indicating full braking.</p><ul><li>A low <code>TargetBrakingStrength</code> value corresponds to free-wheeling. This means:<ul><li>The motor will continue to rotate after the controller is no longer driving the motor (<code>Velocity</code> = 0), due to its momentum.</li><li>The motor shaft will provide little resistance to being turned when it is stopped.</li></ul><li>As <code>TargetBrakingStrength</code> increases, this will engage electrical braking of the DC motor. This means:<ul><li>The motor will stop more quickly if it is in motion when braking is requested.</li><li>The motor shaft will resist rotation by oustide forces.</li></ul><li>Braking will be added gradually, according to the <code>Acceleration</code> setting, once the motor controller's <code>Velocity</code> reaches 0.0</li><li>Braking will be immediately stopped when a new (non-zero) <code>TargetVelocity</code> is set, and the motor will accelerate to the requested velocity.</li><li>Braking mode is enabled by setting the <code>Velocity</code> to 0.0</li></ul></P>
+</P>
+<P><IMG SRC="DCMotorSetTargetBrakingStrengthc.png" ALT="Phidget DC Motor.lvlib:DCMotorSetTargetBrakingStrength.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Target Braking Strength</B> <P><P>The braking strength value</P>
+<P><B>1060_0 (ver: 100, 110) <I>DC Motor Controller</I>: </B><B>Val:</B> 0<P>
+<P><B>1064_0 (ver: 100, 101, 102) <I>DC Motor Controller</I>: </B><B>Val:</B> 0
+<P><B>1064_1 (ver: 102) <I>DC Motor Controller</I>: </B><B>Val:</B> 0<P>
+<P><B>1065_0 (ver: 100, 101) <I>DC Motor Controller</I>: </B><B> Def:</B> 0
+<P><B>1065_1 (ver: 100, 101) <I>DC Motor Controller</I>: </B><B> Def:</B> 0<P>
+<P><B>DCC1000_0 (ver: 115) <I>DC Motor Controller</I>: </B><B>Val:</B> 0<P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>DC Motor Controller</I>: </B><B>Val:</B> 0<P><P>
+<P><B>DCC1001_0 (ver: 114, 116, 117) <I>DC Motor Controller</I>: </B><B> Def:</B> 0<P><P>
+<P><B>DCC1002_0 (ver: 100) <I>DC Motor Controller</I>: </B><B> Def:</B> 0<P><P>
+<P><B>DCC1003_0 (ver: 100) <I>DC Motor Controller</I>: </B><B> Def:</B> 0<P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

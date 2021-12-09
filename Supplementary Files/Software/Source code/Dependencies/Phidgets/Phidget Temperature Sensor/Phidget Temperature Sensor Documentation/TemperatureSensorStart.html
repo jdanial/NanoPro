@@ -1,0 +1,391 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Temperature Sensor.lvlib:TemperatureSensorStart.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Temperature Sensor.lvlib:TemperatureSensorStart.vi"></A><H2>Phidget Temperature Sensor.lvlib:TemperatureSensorStart.vi</H2>
+<P>Opens and initializes a Phidget Temperature Sensor</P>
+<P><IMG SRC="TemperatureSensorStartc.png" ALT="Phidget Temperature Sensor.lvlib:TemperatureSensorStart.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cdbl.png" ALT="cdbl"></P>
+</TD>
+<TD>
+<B>Change Trigger</B> <P><P>The change trigger value</P>
+<P><B>Units: </B>degrees celsius (°C)</P>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IR)</I>: </B><B>Min:</B> 0<B> Max:</B> 1000<B> Def:</B> 0
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IR)</I>: </B><B>Min:</B> 0<B> Max:</B> 1000<B> Def:</B> 0<P>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 100<B> Def:</B> 0
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 100<B> Def:</B> 0<P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Thermocouple Input</I>: </B><B>Min:</B> 0<B> Max:</B> 1000<B> Def:</B> 0<P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 100<B> Def:</B> 0<P>
+<P><B>1051_0 (ver: 100) <I>Thermocouple Input</I>: </B><B>Min:</B> 0<B> Max:</B> 1000<B> Def:</B> 0<P>
+<P><B>1051_0 (ver: 100) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 100<B> Def:</B> 0<P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Thermocouple Input</I>: </B><B>Min:</B> 0<B> Max:</B> 1000<B> Def:</B> 0<P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 100<B> Def:</B> 0<P>
+<P><B>1051_1 (ver: 300) <I>Thermocouple Input</I>: </B><B>Min:</B> 0<B> Max:</B> 1000<B> Def:</B> 0<P>
+<P><B>1051_1 (ver: 300) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 100<B> Def:</B> 0<P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Thermocouple Input</I>: </B><B>Min:</B> 0<B> Max:</B> 1000<B> Def:</B> 0<P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 100<B> Def:</B> 0<P>
+<P><B>DCC1000_0 (ver: 115) <I>Temperature Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 165<B>Val:</B> 0<P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Temperature Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 165<B>Val:</B> 0<P><P>
+<P><B>DCC1100_0 (ver: 113, 114) <I>Temperature Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 165<B> Def:</B> 0<P><P>
+<P><B>HUM1000_0 (ver: 104, 105) <I>Temperature Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 125<B> Def:</B> 0<P>
+<P><B>SAF1000_0 (ver: 101, 102) <I>Temperature Sensor</I>: </B><B>Min:</B> 0<B> Max:</B> 165<B> Def:</B> 0<P><P>
+<P><B>TMP1000_0 (ver: 105, 107) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 125<B>Val:</B> 0<P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Thermocouple Input</I>: </B><B>Min:</B> 0<B> Max:</B> 1640<B> Def:</B> 0<P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 125<B> Def:</B> 0<P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Thermocouple Input</I>: </B><B>Min:</B> 0<B> Max:</B> 1640<B> Def:</B> 0<P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 0<B> Max:</B> 125<B> Def:</B> 0<P>
+<P><B>TMP1200_0 (ver: 104, 105, 106) <I>RTD input</I>: </B><B>Min:</B> 0<B> Max:</B> 1050<B> Def:</B> 0<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Data Interval</B> <P><P>The data interval value</P>
+<P><B>Units: </B>milliseconds (ms)</P>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IR)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IR)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Thermocouple Input</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1051_0 (ver: 100) <I>Thermocouple Input</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1051_0 (ver: 100) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Thermocouple Input</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1051_1 (ver: 300) <I>Thermocouple Input</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1051_1 (ver: 300) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Thermocouple Input</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 32<B> Max:</B> 60000<B> Def:</B> 256<P>
+<P><B>DCC1000_0 (ver: 115) <I>Temperature Sensor</I>: </B><B>Min:</B> 500<B> Max:</B> 60000<B>Val:</B> 500<P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Temperature Sensor</I>: </B><B>Min:</B> 500<B> Max:</B> 60000<B>Val:</B> 500<P><P>
+<P><B>DCC1100_0 (ver: 113, 114) <I>Temperature Sensor</I>: </B><B>Min:</B> 100<B> Max:</B> 60000<B> Def:</B> 250<P><P>
+<P><B>HUM1000_0 (ver: 104, 105) <I>Temperature Sensor</I>: </B><B>Min:</B> 500<B> Max:</B> 60000<B> Def:</B> 500<P>
+<P><B>SAF1000_0 (ver: 101, 102) <I>Temperature Sensor</I>: </B><B>Min:</B> 100<B> Max:</B> 60000<B> Def:</B> 250<P><P>
+<P><B>TMP1000_0 (ver: 105, 107) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 500<B> Max:</B> 60000<B>Val:</B> 500<P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Thermocouple Input</I>: </B><B>Min:</B> 20<B> Max:</B> 60000<B> Def:</B> 250<P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 300<B> Max:</B> 60000<B> Def:</B> 500<P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Thermocouple Input</I>: </B><B>Min:</B> 20<B> Max:</B> 60000<B> Def:</B> 250<P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Temperature Sensor (IC)</I>: </B><B>Min:</B> 300<B> Max:</B> 60000<B> Def:</B> 500<P>
+<P><B>TMP1200_0 (ver: 104, 105, 106) <I>RTD input</I>: </B><B>Min:</B> 250<B> Max:</B> 60000<B> Def:</B> 250<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cnclst.png" ALT="cnclst"></P>
+</TD>
+<TD>
+<B>Device Info</B> <P>Information required to specify which Phidget to open</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Serial Number</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Channel</B> <P><P>The channel index</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Port</B> <P><P>The hub port index</P></P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>ThermocoupleType</B> <P><P>The thermocouple type</P><TABLE border="1"><TR><TH colspan="9">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="7">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>1048_0</B><br/>v100<br/>v101<br/>v102</TD><TD align="center" valign="top"><B>1051_0</B><br/>v100</TD><TD align="center" valign="top"><B>1051_0</B><br/>v200<br/>v201<br/>v202</TD><TD align="center" valign="top"><B>1051_1</B><br/>v300</TD><TD align="center" valign="top"><B>1051_2</B><br/>v400<br/>v401<br/>v402</TD><TD align="center" valign="top"><B>TMP1100_0</B><br/>v103<br/>v105</TD><TD align="center" valign="top"><B>TMP1101_0</B><br/>v104<br/>v106</TD></TR><TR><TD>THERMOCOUPLE_TYPE_J</TD><TD align="center">1</TD><TD align="center">&#10003;</TD><TD align="center">X</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>THERMOCOUPLE_TYPE_K</TD><TD align="center">2</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>THERMOCOUPLE_TYPE_E</TD><TD align="center">3</TD><TD align="center">&#10003;</TD><TD align="center">X</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>THERMOCOUPLE_TYPE_T</TD><TD align="center">4</TD><TD align="center">&#10003;</TD><TD align="center">X</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+</TABLE>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IR)</I>: </B>Unsupported<P>
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IR)</I>: </B>Unsupported<P><P>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P>
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Thermocouple Input</I>: </B><B> Def:</B> THERMOCOUPLE_TYPE_K<P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 100) <I>Thermocouple Input</I>: </B><B>Val:</B> THERMOCOUPLE_TYPE_K<P>
+<P><B>1051_0 (ver: 100) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Thermocouple Input</I>: </B><B> Def:</B> THERMOCOUPLE_TYPE_K<P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_1 (ver: 300) <I>Thermocouple Input</I>: </B><B> Def:</B> THERMOCOUPLE_TYPE_K<P>
+<P><B>1051_1 (ver: 300) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Thermocouple Input</I>: </B><B> Def:</B> THERMOCOUPLE_TYPE_K<P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>DCC1000_0 (ver: 115) <I>Temperature Sensor</I>: </B>Unsupported<P><P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>DCC1100_0 (ver: 113, 114) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>HUM1000_0 (ver: 104, 105) <I>Temperature Sensor</I>: </B>Unsupported<P><P>
+<P><B>SAF1000_0 (ver: 101, 102) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>TMP1000_0 (ver: 105, 107) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Thermocouple Input</I>: </B><B> Def:</B> THERMOCOUPLE_TYPE_K<P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Thermocouple Input</I>: </B><B> Def:</B> THERMOCOUPLE_TYPE_K<P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1200_0 (ver: 104, 105, 106) <I>RTD input</I>: </B>Unsupported<P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu16.png" ALT="cu16"></P>
+</TD>
+<TD>
+<B>Connection</B> <P>Selects whether to look for a Phidget on the <B>Local</B> machine, over a <B>Remote</B> network, or both (<B>No Preference</B>)</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Timeout (mSec)</B> <P>Timeout in milliseconds</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>RTD Type</B> <P><P>The RTD type</P><TABLE border="1"><TR><TH colspan="3">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="1">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>TMP1200_0</B><br/>v104<br/>v105<br/>v106</TD></TR><TR><TD>RTD_TYPE_PT100_3850</TD><TD align="center">1</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>RTD_TYPE_PT1000_3850</TD><TD align="center">2</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>RTD_TYPE_PT100_3920</TD><TD align="center">3</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>RTD_TYPE_PT1000_3920</TD><TD align="center">4</TD><TD align="center">&#10003;</TD></TR>
+</TABLE>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IR)</I>: </B>Unsupported<P>
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IR)</I>: </B>Unsupported<P><P>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P>
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 100) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 100) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_1 (ver: 300) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1051_1 (ver: 300) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>DCC1000_0 (ver: 115) <I>Temperature Sensor</I>: </B>Unsupported<P><P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>DCC1100_0 (ver: 113, 114) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>HUM1000_0 (ver: 104, 105) <I>Temperature Sensor</I>: </B>Unsupported<P><P>
+<P><B>SAF1000_0 (ver: 101, 102) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>TMP1000_0 (ver: 105, 107) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1200_0 (ver: 104, 105, 106) <I>RTD input</I>: </B><B> Def:</B> RTD_TYPE_PT1000_3850<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>RTD Wire Setup</B> <P><P>The RTD wire setup</P><TABLE border="1"><TR><TH colspan="3">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="1">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>TMP1200_0</B><br/>v104<br/>v105<br/>v106</TD></TR><TR><TD>RTD_WIRE_SETUP_2WIRE</TD><TD align="center">1</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>RTD_WIRE_SETUP_3WIRE</TD><TD align="center">2</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>RTD_WIRE_SETUP_4WIRE</TD><TD align="center">3</TD><TD align="center">&#10003;</TD></TR>
+</TABLE>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IR)</I>: </B>Unsupported<P>
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IR)</I>: </B>Unsupported<P><P>
+<P><B>1045_0 (ver: 100, 101) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P>
+<P><B>1045_1 (ver: 101) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1048_0 (ver: 100, 101, 102) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 100) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 100) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1051_0 (ver: 200, 201, 202) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_1 (ver: 300) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1051_1 (ver: 300) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>1051_2 (ver: 400, 401, 402) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>DCC1000_0 (ver: 115) <I>Temperature Sensor</I>: </B>Unsupported<P><P>
+<P><B>DCC1000_0 (ver: 204, 205, 206) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>DCC1100_0 (ver: 113, 114) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>HUM1000_0 (ver: 104, 105) <I>Temperature Sensor</I>: </B>Unsupported<P><P>
+<P><B>SAF1000_0 (ver: 101, 102) <I>Temperature Sensor</I>: </B>Unsupported<P><P><P>
+<P><B>TMP1000_0 (ver: 105, 107) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>TMP1100_0 (ver: 103, 105) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Thermocouple Input</I>: </B>Unsupported<P><P>
+<P><B>TMP1101_0 (ver: 104, 106) <I>Temperature Sensor (IC)</I>: </B>Unsupported<P><P>
+<P><B>TMP1200_0 (ver: 104, 105, 106) <I>RTD input</I>: </B><B> Def:</B> RTD_WIRE_SETUP_4WIRE<P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Attached?</B> <P>Returns TRUE is the device successfully attached, or FALSE otherwise</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Phidget ID</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Serial Number Return</B> <P><P>The device serial number</P></P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

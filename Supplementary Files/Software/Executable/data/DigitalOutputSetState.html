@@ -1,0 +1,202 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Digital Output.lvlib:DigitalOutputSetState.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Digital Output.lvlib:DigitalOutputSetState.vi"></A><H2>Phidget Digital Output.lvlib:DigitalOutputSetState.vi</H2>
+<P><P>The <code>State</code> will indicate whether the output is high (TRUE) or low (FALSE).<ul><li>If a <code>DutyCycle</code> has been set, the state will return as TRUE if the DutyCycle is above 0.5, or FALSE otherwise.</li></ul></P>
+</P>
+<P><IMG SRC="DigitalOutputSetStatec.png" ALT="Phidget Digital Output.lvlib:DigitalOutputSetState.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>State</B> <P><P>The state value</P><P>
+<P><B>1011_0 (ver: 100, 101, 102, 103) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1012_0 (ver: 600) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1012_0 (ver: 601) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1012_0 (ver: 602, 603, 604) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1012_1 (ver: 605) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1012_2 (ver: 605) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1013_0 (ver: 800, 811, 820) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1013_0 (ver: 821, 823) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1018_0 (ver: 824, 825, 826) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1018_1 (ver: 826) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1019_0 (ver: 826) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1070_0 (ver: 826) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1014_0 (ver: 700) <I>Power Relay</I>: </B><B>Val:</B> 0<P>
+<P><B>1014_0 (ver: 704, 705, 706) <I>Power Relay</I>: </B><B>Val:</B> 0
+<P><B>1014_1 (ver: 707) <I>Power Relay</I>: </B><B>Val:</B> 0
+<P><B>1014_2 (ver: 707) <I>Power Relay</I>: </B><B>Val:</B> 0<P>
+<P><B>1017_0 (ver: 100) <I>Signal Relay</I>: </B><B>Val:</B> 0
+<P><B>1017_1 (ver: 100) <I>Signal Relay</I>: </B><B>Val:</B> 0<P>
+<P><B>1010_0 (ver: 903, 904) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1018_2 (ver: 900, 901, 902, 903, 904) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1019_1 (ver: 903, 904) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1072_0 (ver: 903) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1073_0 (ver: 904) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1023_0 (ver: 200) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1023_0 (ver: 200) <I>LED Driver</I>: </B><B>Val:</B> 0<P>
+<P><B>1023_0 (ver: 200) <I>Onboard LED</I>: </B><B>Val:</B> 0<P>
+<P><B>1023_0 (ver: 201, 202, 203, 204) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1023_1 (ver: 205, 206) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1023_0 (ver: 201, 202, 203, 204) <I>LED Driver</I>: </B><B>Val:</B> 0
+<P><B>1023_1 (ver: 205, 206) <I>LED Driver</I>: </B><B>Val:</B> 0<P>
+<P><B>1023_0 (ver: 201, 202, 203, 204) <I>Onboard LED</I>: </B><B>Val:</B> 0
+<P><B>1023_1 (ver: 205, 206) <I>Onboard LED</I>: </B><B>Val:</B> 0<P>
+<P><B>1024_0 (ver: 100, 101, 103) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1024_0 (ver: 100, 101, 103) <I>LED Driver</I>: </B><B>Val:</B> 0<P>
+<P><B>1024_0 (ver: 100, 101, 103) <I>Onboard LED</I>: </B><B>Val:</B> 0<P>
+<P><B>1030_0 (ver: 100, 101, 200, 201, 202) <I>LED Driver</I>: </B><B>Val:</B> 0<P>
+<P><B>1031_0 (ver: 100, 101) <I>LED Driver</I>: </B><B>Val:</B> 0<P>
+<P><B>1032_0 (ver: 200, 201) <I>LED Driver</I>: </B><B>Val:</B> 0<P>
+<P><B>1202_0 (ver: 100) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1203_0 (ver: 100) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1202_0 (ver: 120, 121) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1202_1 (ver: 123, 124) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1203_0 (ver: 120, 121) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1203_1 (ver: 123, 124) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1202_2 (ver: 200, 201, 202, 203, 204) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1203_2 (ver: 200, 201, 202, 203, 204) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>1219_0 (ver: 110, 111, 113) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1220_0 (ver: 110, 111, 113) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1221_0 (ver: 110, 111, 113) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>1222_0 (ver: 110, 111, 113) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>HUB0000_0 (ver: 117, 118, 119) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>HUB0000_0 (ver: 121) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>HUB5000_0 (ver: 102) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>SBC3003_0 (ver: 101, 102) <I>Digital Output</I>: </B><B>Val:</B> 0
+<P><B>SBC3003_0 (ver: 108) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>OUT1100_0 (ver: 100) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>OUT1100_0 (ver: 110) <I>Digital Output</I>: </B><B>Val:</B> 0<P>
+<P><B>LED1000_0 (ver: 104) <I>LED Driver</I>: </B><B>Val:</B> 0<P>
+<P><B>REL1000_0 (ver: 101) <I>Power Relay</I>: </B><B>Val:</B> 0<P>
+<P><B>REL1000_0 (ver: 110) <I>Power Relay</I>: </B><B>Val:</B> 0<P>
+<P><B>REL1100_0 (ver: 100) <I>Digital Output Isolated</I>: </B><B>Val:</B> 0<P>
+<P><B>REL1100_0 (ver: 110) <I>Digital Output Isolated</I>: </B><B>Val:</B> 0<P>
+<P><B>REL1101_0 (ver: 102) <I>Digital Output Isolated</I>: </B><B>Val:</B> 0<P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

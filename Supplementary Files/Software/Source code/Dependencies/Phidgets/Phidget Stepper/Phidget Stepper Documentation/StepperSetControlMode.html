@@ -1,0 +1,151 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Stepper.lvlib:StepperSetControlMode.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Stepper.lvlib:StepperSetControlMode.vi"></A><H2>Phidget Stepper.lvlib:StepperSetControlMode.vi</H2>
+<P><P>Use step mode when you want to set a <code>TargetPosition</code> for the Stepper motor. Use run mode when you simply want the Stepper motor to rotate continuously in a specific direction.Changing the control mode will always set your <code>VelocityLimit</code> to zero to prevent unexpected behaviour, so you should always set control mode before choosing your velocity limit.</P>
+</P>
+<P><IMG SRC="StepperSetControlModec.png" ALT="Phidget Stepper.lvlib:StepperSetControlMode.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Control Mode</B> <P><P>The control mode value</P><TABLE border="1"><TR><TH colspan="11">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="9">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>1062_0</B><br/>v101<TD align="center" valign="top"><B>1062_1</B><br/>v101<br/>v102</TD><TD align="center" valign="top"><B>1063_0</B><br/>v100<TD align="center" valign="top"><B>1063_1</B><br/>v100<br/>v101</TD><TD align="center" valign="top"><B>1067_0</B><br/>v200<br/>v201</TD><TD align="center" valign="top"><B>STC1000_0</B><br/>v100</TD></TD><TD align="center" valign="top"><B>STC1001_0</B><br/>v100</TD></TD><TD align="center" valign="top"><B>STC1002_0</B><br/>v101</TD></TD><TD align="center" valign="top"><B>STC1003_0</B><br/>v100</TD></TD></TR><TR><TD>CONTROL_MODE_STEP</TD><TD align="center">0</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>CONTROL_MODE_RUN</TD><TD align="center">1</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+</TABLE>
+<P><B>1062_0 (ver: 101) <I>Unipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP
+<P><B>1062_1 (ver: 101, 102) <I>Unipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP<P>
+<P><B>1063_0 (ver: 100) <I>Bipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP
+<P><B>1063_1 (ver: 100, 101) <I>Bipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP<P>
+<P><B>1067_0 (ver: 200, 201) <I>Bipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP<P>
+<P><B>STC1000_0 (ver: 100) <I>Bipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP<P><P>
+<P><B>STC1001_0 (ver: 100) <I>Bipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP<P><P>
+<P><B>STC1002_0 (ver: 101) <I>Bipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP<P><P>
+<P><B>STC1003_0 (ver: 100) <I>Bipolar Stepper Controller</I>: </B><B> Def:</B> CONTROL_MODE_STEP<P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>

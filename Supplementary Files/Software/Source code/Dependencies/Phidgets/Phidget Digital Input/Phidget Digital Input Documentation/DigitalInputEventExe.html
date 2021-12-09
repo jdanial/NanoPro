@@ -1,0 +1,273 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Digital Input.lvlib:DigitalInputEventExe.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Digital Input.lvlib:DigitalInputEventExe.vi"></A><H2>Phidget Digital Input.lvlib:DigitalInputEventExe.vi</H2>
+<P>This event will occur when the state of the digital input has changed.<ul><li>The value will either be 0 or 1 (true or false).</li>
+<P><IMG SRC="DigitalInputEventExec.png" ALT="Phidget Digital Input.lvlib:DigitalInputEventExe.vi"></P>
+<B>Device Support:</B>
+<P><B>1011_0 (ver: 100, 101, 102, 103)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1012_0 (ver: 600)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1012_0 (ver: 601)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1012_0 (ver: 602, 603, 604)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1012_1 (ver: 605)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1012_2 (ver: 605)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1013_0 (ver: 800, 811, 820)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1013_0 (ver: 821, 823)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1018_0 (ver: 824, 825, 826)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1018_1 (ver: 826)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1019_0 (ver: 826)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1070_0 (ver: 826)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1010_0 (ver: 903, 904)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1018_2 (ver: 900, 901, 902, 903, 904)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1019_1 (ver: 903, 904)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1072_0 (ver: 903)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1073_0 (ver: 904)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1047_0 (ver: 100, 101, 102)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1047_1 (ver: 102, 103)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1052_0 (ver: 100)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1052_0 (ver: 101, 102, 103)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1052_0 (ver: 110, 111)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1060_0 (ver: 100, 110)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1063_0 (ver: 100)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1063_1 (ver: 100, 101)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1065_0 (ver: 100, 101)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1065_1 (ver: 100, 101)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1202_0 (ver: 100)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1203_0 (ver: 100)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1202_0 (ver: 120, 121)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1202_1 (ver: 123, 124)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1203_0 (ver: 120, 121)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1203_1 (ver: 123, 124)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1202_2 (ver: 200, 201, 202, 203, 204)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1203_2 (ver: 200, 201, 202, 203, 204)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1219_0 (ver: 110, 111, 113)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1220_0 (ver: 110, 111, 113)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1221_0 (ver: 110, 111, 113)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>1222_0 (ver: 110, 111, 113)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>HUB0000_0 (ver: 117, 118, 119)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>HUB0000_0 (ver: 121)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>HUB5000_0 (ver: 102)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>SBC3003_0 (ver: 101, 102)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>SBC3003_0 (ver: 108)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>DAQ1200_0 (ver: 103)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>DAQ1300_0 (ver: 102)  <I>Digital Input Isolated </I>: </B> Supported<P>
+<P><B>DAQ1301_0 (ver: 100)  <I>Digital Input Isolated </I>: </B> Supported<P>
+<P><B>DAQ1400_0 (ver: 112)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>HIN1101_0 (ver: 101)  <I>Digital Input </I>: </B> Supported<P>
+<P><B>HIN1100_0 (ver: 104, 105)  <I>Thumbstick Button </I>: </B> Supported<P></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="c1du64.png" ALT="c1du64"></P>
+</TD>
+<TD>
+<B>Devices In</B> <P>A list of devices registered for the same type of event</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ceventregrn.png" ALT="ceventregrn"></P>
+</TD>
+<TD>
+<B>Event Registration Refnum In</B> <P>Event # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> string describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> indicator on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>Event?</B> <P>Returns TRUE if the event has executed, or FALSE otherwise.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="i1du64.png" ALT="i1du64"></P>
+</TD>
+<TD>
+<B>Devices Out</B> <P>Same as Devices In</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>Index</B> <P>The index of the device that triggered the event within the <B>Devices In</B> array.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>State</B> <P><P>The state value</P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>phid</B> <P>Device # Identification of the device that triggered the event.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>State (Numeric)</B> <P>The state of the digital input as returned from the Phidget22 library. This can be 0 for FALSE, 1 for TRUE, or 2 for UNKNOWN.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ieventregrn.png" ALT="ieventregrn"></P>
+</TD>
+<TD>
+<B>Event Registration Refnum Out</B> <P>Same as Event Registration Refnum In</P>
+</TD>
+</TR>
+</Table>
+</BODY>
+</HTML>

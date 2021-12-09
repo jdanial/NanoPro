@@ -1,0 +1,146 @@
+<HTML>
+<HEAD>
+<TITLE>Phidget Voltage Output.lvlib:VoltageOutputSetVoltageOutputRange.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="Phidget Voltage Output.lvlib:VoltageOutputSetVoltageOutputRange.vi"></A><H2>Phidget Voltage Output.lvlib:VoltageOutputSetVoltageOutputRange.vi</H2>
+<P><P>Choose a <code>VoltageOutputRange</code> that best suits your application.<ul><li>Changing the <code>VoltageOutputRange</code> will also affect the <code>MinVoltage</code> and <code>MaxVoltage</code> values.</li></P>
+</P>
+<P><IMG SRC="VoltageOutputSetVoltageOutputRangec.png" ALT="Phidget Voltage Output.lvlib:VoltageOutputSetVoltageOutputRange.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu64.png" ALT="cu64"></P>
+</TD>
+<TD>
+<B>Device In</B> <P>Device # Identification</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cerrcodeclst.png" ALT="cerrcodeclst"></P>
+</TD>
+<TD>
+<B>error in (no error)</B> <P><B>error in</B> can accept error information wired from VIs previously called.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cstr.png" ALT="cstr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error in</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ci32.png" ALT="ci32"></P>
+</TD>
+<TD>
+<B>Voltage Output Range</B> <P><P>The output range value</P><TABLE border="1"><TR><TH colspan="5">Enumeration Values</TH></TR><TR><TH rowspan="2">Name</TH><TH rowspan="2">Value</TH><TH colspan="3">Supported Devices</TH></TR>
+<TR><TD align="center" valign="top"><B>1002_0</B><br/>v100<br/>v101</TD><TD align="center" valign="top"><B>OUT1001_0</B><br/>v103</TD></TD><TD align="center" valign="top"><B>OUT1002_0</B><br/>v100</TD></TD></TR><TR><TD>VOLTAGE_OUTPUT_RANGE_10V</TD><TD align="center">1</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+<TR><TD>VOLTAGE_OUTPUT_RANGE_5V</TD><TD align="center">2</TD><TD align="center">X</TD><TD align="center">&#10003;</TD><TD align="center">&#10003;</TD></TR>
+</TABLE>
+<P><B>1002_0 (ver: 100, 101) <I>Voltage Output</I>: </B><B>Val:</B> VOLTAGE_OUTPUT_RANGE_10V<P>
+<P><B>OUT1000_0 (ver: 102) <I>Voltage Output</I>: </B>Unsupported<P><P><P>
+<P><B>OUT1001_0 (ver: 103) <I>Voltage Output</I>: </B><B> Def:</B> VOLTAGE_OUTPUT_RANGE_10V<P><P>
+<P><B>OUT1002_0 (ver: 100) <I>Voltage Output</I>: </B><B> Def:</B> VOLTAGE_OUTPUT_RANGE_10V<P><P></P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="iu64.png" ALT="iu64"></P>
+</TD>
+<TD>
+<B>Device Out</B> <P>Same as Device In</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> passes error or warning information out of a VI to be used by other VIs.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning.</P>
+<P></P>
+<P>Right-click the <B>error out</B> control on the front panel and select <B>Explain Error</B> or <B>Explain Warning</B> from the shortcut menu for more information about the error.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+</BODY>
+</HTML>
