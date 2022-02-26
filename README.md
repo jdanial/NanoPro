@@ -21,5 +21,5 @@ Any data or publications arising from the use of NanoPro 1.0 should cite the fol
   
 **Danial, JSH, Lam, JYL, Wu, Y, Woolley, M, Dimou, E, Cheetham, MR, Emin, D, and Klenerman, D.**  
 Constructing a cost-efficient, high-throughput and high-quality single molecule localization microscope for super resolution imaging.  
-_Nature Protocols_, 2021.  
+_Nature Protocols_, 2022 (in press).  
 
