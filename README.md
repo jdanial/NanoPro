@@ -7,7 +7,7 @@
 
 **Danial, JSH, Lam, JYL, Wu, Y, Woolley, M, Dimou, E, Cheetham, MR, Emin, D, and Klenerman, D.**  
 Constructing a cost-efficient, high-throughput and high-quality single molecule localization microscope for super resolution imaging.  
-_Nature Protocols_, 2021.  
+_Nature Protocols_, 2022.  
   
 Files referred to as supplementary in Part 1 can be found [here](https://github.com/jdanial/NanoPro/tree/main/Supplementary%20Files).
   
